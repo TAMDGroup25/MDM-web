@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import CustomButton from "../../components/ui/customButton";
 
 const Hero = () => {
   const { t } = useTranslation();
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   const scrollToContact = () => {
     const target = document.getElementById("contacto");
@@ -13,13 +15,24 @@ const Hero = () => {
 
   return (
     <section id="inicio" className="relative w-full h-screen overflow-hidden">
+      {!videoLoaded && (
+        <img
+          src="/videoScreenshoot.avif"
+          alt="Fondo de MDM"
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        />
+      )}
+
       {/* Video de fondo */}
       <video
         autoPlay
         muted
         loop
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        className={`absolute top-0 left-0 w-full h-full object-cover z-0 transition-opacity duration-500 ${
+          videoLoaded ? "opacity-100" : "opacity-0"
+        }`}
+        onCanPlayThrough={() => setVideoLoaded(true)}
       >
         <source src="/video.mp4" type="video/mp4" />
         Tu navegador no soporta videos HTML5.
