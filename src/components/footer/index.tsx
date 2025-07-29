@@ -1,0 +1,105 @@
+import { MapPin, Phone, Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
+
+const Footer = () => {
+  const { t } = useTranslation();
+
+  const scrollToSection = (e: React.MouseEvent, id: string) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: id === "#" ? 0 : document.getElementById(id)?.offsetTop ?? 0,
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    <footer className="bg-gray-100 w-full text-[#053158] py-10 border-t">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        {/* Logo y descripción */}
+        <div className="flex flex-col items-center md:items-start">
+          <img src="/LogoMDM.avif" alt="MDM Logo" className="w-24 mb-4" />
+          <p className="mt-2 text-sm text-center md:text-left">
+            {t("footer.description")}
+          </p>
+        </div>
+
+        {/* Navegación */}
+        <div className="hidden md:block">
+          <h3 className="font-semibold mb-3">{t("footer.links.title")}</h3>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <a href="#" onClick={(e) => scrollToSection(e, "#")} className="hover:text-mdm transition">
+                {t("nav.home")}
+              </a>
+            </li>
+            <li>
+              <a href="#servicios" onClick={(e) => scrollToSection(e, "servicios")} className="hover:text-mdm">
+                {t("nav.services")}
+              </a>
+            </li>
+            <li>
+              <a href="#proyectos" onClick={(e) => scrollToSection(e, "proyectos")} className="hover:text-mdm">
+                {t("nav.projects")}
+              </a>
+            </li>
+            <li>
+              <a href="#nosotros" onClick={(e) => scrollToSection(e, "nosotros")} className="hover:text-mdm">
+                {t("nav.about")}
+              </a>
+            </li>
+            <li>
+              <a href="#contacto" onClick={(e) => scrollToSection(e, "contacto")} className="hover:text-mdm">
+                {t("nav.contact")}
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Contacto */}
+        <div>
+          <h3 className="font-semibold mb-3">{t("footer.contact.title")}</h3>
+          <ul className="space-y-2 text-sm">
+            <li className="flex items-center gap-2">
+              <MapPin size={16} className="text-mdm" />
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Mallorca"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Mallorca, España
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <Phone size={16} className="text-mdm" />
+              <a href="tel:+34664686850" className="hover:underline">
+                +34 664 68 68 50
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <Mail size={16} className="text-mdm" />
+              <a href="mailto:info@managementmallorca.com" className="hover:underline">
+                info@managementmallorca.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Horario */}
+        <div className="hidden md:block">
+          <h3 className="font-semibold mb-3">{t("footer.schedule.title")}</h3>
+          <ul className="space-y-2 text-sm">
+            <li>{t("footer.schedule.hours")}</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Línea inferior */}
+      <div className="mt-10 border-t pt-6 text-center text-sm text-gray-500">
+        &copy; {new Date().getFullYear()} MDM · Management Development Mallorca. {t("footer.rights")}
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

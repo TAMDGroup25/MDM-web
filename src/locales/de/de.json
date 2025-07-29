@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "projects": "Projekte",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+   "footer": {
+    "description": "Wir bieten umfassende Lösungen in Projektmanagement, Architektur, Ingenieurwesen und Design.",
+    "links": {
+      "title": "Navigation"
+    },
+    "contact": {
+      "title": "Kontakt"
+    },
+    "schedule": {
+      "title": "Öffnungszeiten",
+      "hours": "Montag bis Freitag von 9:00 bis 18:00 Uhr"
+    },
+    "rights": "Alle Rechte vorbehalten."
+  },
+   "contact": {
+    "title": "Kontaktiere uns",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "button": "Nachricht senden"
+  },
+  "hero": {
+    "title": "Ganzheitliches Projektmanagement auf Mallorca",
+    "subtitle": "Architektur, Bau und persönliche Projektleitung für Ihre anspruchsvollsten Vorhaben.",
+    "button": "Kontaktiere uns"
+  },
+  "about": {
+    "title": "Über Uns",
+    "paragraph1": "Bei MDM haben wir unseren Weg vor einem Jahr mit einer klaren Vision begonnen: eine ganzheitliche Projektverwaltung anzubieten, die auf Professionalität, Engagement und Exzellenz basiert. Von unserem Standort auf Mallorca aus arbeiten wir eng mit unseren Kunden zusammen, um ihre Ideen umzusetzen – in den Bereichen Architektur, Bau und technischer Leitung.",
+    "paragraph2": "Unser Team besteht aus Fachleuten verschiedener Disziplinen, was es uns ermöglicht, vollständige und maßgeschneiderte Lösungen anzubieten. Jede Projektphase – vom ersten Entwurf bis zur Umsetzung – wird mit Präzision, Planung und Nähe durchgeführt, um hochwertige Ergebnisse zu gewährleisten.",
+    "paragraph3": "Wir setzen auf eine Arbeitsphilosophie, die auf Transparenz, Innovation und ständiger Kommunikation basiert. Bei MDM ist jedes Projekt einzigartig – und so behandeln wir es auch. Unser oberstes Ziel ist es, dass sich der Kunde jederzeit begleitet fühlt. Deine Vision treibt uns an, unsere Erfahrung macht sie möglich."
+  },
+    "services": {
+    "title": "Unsere Dienstleistungen",
+    "engineering": {
+      "title": "Ingenieurprojekte",
+      "description": "Technische Lösungen im industriellen Bereich, im Bauwesen und für Betriebe mit Aktivitäten.",
+      "items": [
+        "Infrastruktur- und Industrieprojekte",
+        "Projekte im Bauwesen",
+        "Installations- und Aktivitätsprojekte in Betrieben"
+      ]
+    },
+    "management": {
+      "title": "Projektmanagement",
+      "description": "Leitung und umfassende Verwaltung von Bauprojekten – Kontrolle und Qualität in jeder Phase.",
+      "items": [
+        "Bauleitung",
+        "Ganzheitliches Projektmanagement",
+        "Koordination von Sicherheit und Gesundheit auf der Baustelle"
+      ]
+    },
+    "interior": {
+      "title": "Innenarchitektur",
+      "description": "Innenarchitektur und kreative Lösungen, die Räume verändern und verbessern.",
+      "items": [
+        "Beleuchtungsprojekte",
+        "Innenarchitekturvorschläge"
+      ]
+    },
+    "licensing": {
+      "title": "Genehmigungen und Inbetriebnahme",
+      "description": "Umfassende Unterstützung bei Verwaltungsverfahren zur Legalisierung und Inbetriebnahme Ihres Projekts.",
+      "items": [
+        "Integrierte Genehmigungen für Bau, Installation und Aktivitäten",
+        "Verwaltungsbehördliche Genehmigungen"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Unser Projekte"
+  },
+  "seo": {
+    "title": "MDM · Ganzheitliches Projektmanagement auf Mallorca",
+    "description": "Architektur, Bauarbeiten, Renovierungen und Innenarchitektur auf Mallorca. Bei MDM begleiten wir Ihr Projekt umfassend, professionell und persönlich."
+  }
+}

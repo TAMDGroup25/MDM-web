@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "description": "Ofrecemos soluciones integrales en gestión de proyectos, arquitectura, ingeniería y diseño.",
+    "links": {
+      "title": "Navegación"
+    },
+    "contact": {
+      "title": "Contacto"
+    },
+    "schedule": {
+      "title": "Horario",
+      "hours": "Lunes a Viernes de 9:00 a 18:00"
+    },
+    "rights": "Todos los derechos reservados."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "button": "Enviar mensaje"
+  },
+   "hero": {
+    "title": "Gestión Integral de Proyectos en Mallorca",
+    "subtitle": "Arquitectura, obras y dirección personalizada para tus proyectos más exigentes.",
+    "button": "Contáctanos"
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "paragraph1": "En MDM iniciamos nuestro camino hace un año con una visión clara enfocada en ofrecer una gestión integral de proyectos basada en la profesionalidad, el compromiso y la excelencia. Desde nuestra base en Mallorca, trabajamos codo a codo con nuestros clientes para materializar sus ideas, abarcando áreas como la arquitectura, la obra y la dirección técnica.",
+    "paragraph2": "Nuestro equipo está compuesto por perfiles especializados en distintas disciplinas, lo que nos permite ofrecer soluciones completas y adaptadas a cada necesidad. Cada fase del proyecto —desde el diseño inicial hasta la ejecución— es abordada con precisión, planificación y cercanía, garantizando resultados de alto nivel.",
+    "paragraph3": "Apostamos por una filosofía de trabajo centrada en la transparencia, la innovación y la comunicación constante. En MDM, cada proyecto es único, y así lo tratamos. Nuestra prioridad es que el cliente se sienta acompañado en todo momento. Tu visión nos impulsa, nuestra experiencia la hace posible."
+  },
+   "services": {
+    "title": "Nuestros Servicios",
+    "engineering": {
+      "title": "Proyectos de Ingeniería",
+      "description": "Soluciones técnicas en el ámbito industrial, de edificación y para establecimientos con actividad.",
+      "items": [
+        "Proyectos de infraestructuras e industriales",
+        "Proyectos en el ámbito de la edificación",
+        "Proyectos de instalaciones y actividades en establecimientos"
+      ]
+    },
+    "management": {
+      "title": "Project Management",
+      "description": "Dirección y gestión integral de obras, garantizando control y calidad en cada fase.",
+      "items": [
+        "Dirección de obra",
+        "Gestión integral del proyecto",
+        "Coordinación de seguridad y salud en obra"
+      ]
+    },
+    "interior": {
+      "title": "Interiorismo",
+      "description": "Diseño interior y soluciones creativas que transforman y mejoran los espacios.",
+      "items": [
+        "Proyectos de iluminación",
+        "Propuestas de interiorismo"
+      ]
+    },
+    "licensing": {
+      "title": "Licencias y Puesta en Servicio",
+      "description": "Asistencia completa en trámites administrativos para legalizar y activar tu proyecto.",
+      "items": [
+        "Licencias integradas de obra, instalación y actividades",
+        "Autorizaciones administrativas"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Nuestros Proyectos" 
+  },
+  "seo": {
+    "title": "MDM · Gestión Integral de Proyectos en Mallorca",
+    "description": "Arquitectura, obras, reformas e interiorismo en Mallorca. En MDM gestionamos tu proyecto de forma integral, profesional y personalizada."
+  }
+}

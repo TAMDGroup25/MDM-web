@@ -1,0 +1,166 @@
+[
+  {
+    "id": "cala-millor",
+    "nombre": "Reforma Vivienda Cala Millor",
+    "imagen": "https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg",
+    "link": "/proyectos/cala-millor",
+    "ubicacion": "Cala Millor, Mallorca",
+    "inicio": "2022-05-01",
+    "enProceso": false,
+    "tipo": "Reforma integral",
+    "superficie": "145 m²",
+    "colaboradores": ["Estudio Interiorismo Llum", "Constructora Balear"],
+    "descripcion": "Proyecto de reforma integral surgido por encargo directo del propietario para transformar una vivienda tradicional en un espacio moderno, eficiente y luminoso.",
+    "descripcionTecnica": "Redistribución completa de espacios, sustitución de instalaciones, aislamiento térmico, carpintería de aluminio con rotura de puente térmico.",
+    "galeria": [
+      "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg",
+      "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg"
+    ]
+  },
+  {
+    "id": "villa-soller",
+    "nombre": "Villa en Sóller",
+    "imagen": "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
+    "link": "/proyectos/villa-soller",
+    "ubicacion": "Sóller, Mallorca",
+    "inicio": "2023-02-15",
+    "enProceso": true,
+    "tipo": "Obra nueva",
+    "superficie": "310 m²",
+    "colaboradores": ["Studio Bernier (Francia)", "Constructora Sa Muntanya"],
+    "descripcion": "Diseño y ejecución de una villa de lujo en un terreno montañoso con vistas al valle de Sóller. El proyecto se desarrolló en colaboración con un estudio internacional.",
+    "descripcionTecnica": "Estructura de hormigón armado, revestimiento exterior en piedra natural local, sistemas domóticos y suelo radiante.",
+    "galeria": [
+      "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg",
+      "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg"
+    ]
+  },
+  {
+    "id": "palma",
+    "nombre": "Proyecto en Palma",
+    "imagen": "https://images.pexels.com/photos/323776/pexels-photo-323776.jpeg",
+    "link": "/proyectos/palma",
+    "ubicacion": "Palma, Mallorca",
+    "inicio": "2021-09-10",
+    "enProceso": false,
+    "tipo": "Reforma local comercial",
+    "superficie": "220 m²",
+    "colaboradores": ["ARQ Palma", "Constructora Modularis"],
+    "descripcion": "Transformación de un local comercial en un espacio multifuncional con enfoque en sostenibilidad y diseño industrial.",
+    "descripcionTecnica": "Espacios diáfanos con estructura vista, aislamiento acústico, iluminación led de bajo consumo y sistema de ventilación cruzada.",
+    "galeria": [
+      "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg",
+      "https://images.pexels.com/photos/261146/pexels-photo-261146.jpeg"
+    ]
+  },
+  {
+    "id": "pollenca",
+    "nombre": "Residencia en Pollença",
+    "imagen": "https://images.pexels.com/photos/323781/pexels-photo-323781.jpeg",
+    "link": "/proyectos/pollenca",
+    "ubicacion": "Pollença, Mallorca",
+    "inicio": "2023-04-01",
+    "enProceso": true,
+    "tipo": "Rehabilitación patrimonial",
+    "superficie": "180 m²",
+    "colaboradores": ["Ajuntament de Pollença", "ARQ Patrimonial"],
+    "descripcion": "Proyecto residencial privado en el casco antiguo de Pollença. Se trabajó respetando la normativa patrimonial y utilizando materiales tradicionales.",
+    "descripcionTecnica": "Refuerzo estructural con vigas vistas, recuperación de marés, instalación de climatización por aerotermia.",
+    "galeria": [
+      "https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg",
+      "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg"
+    ]
+  },
+  {
+    "id": "arta",
+    "nombre": "Casa en Artà",
+    "imagen": "https://images.pexels.com/photos/323776/pexels-photo-323776.jpeg",
+    "link": "/proyectos/arta",
+    "ubicacion": "Artà, Mallorca",
+    "inicio": "2022-01-20",
+    "enProceso": false,
+    "tipo": "Obra nueva",
+    "superficie": "190 m²",
+    "colaboradores": ["Estudio Llevant", "Ingeniería Biosol"],
+    "descripcion": "Casa unifamiliar construida desde cero con diseño mediterráneo contemporáneo. Incluye soluciones bioclimáticas y espacios abiertos.",
+    "descripcionTecnica": "Cubierta vegetal, fachada ventilada, paneles solares térmicos, orientación solar pasiva.",
+    "galeria": [
+      "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
+      "https://images.pexels.com/photos/1743227/pexels-photo-1743227.jpeg"
+    ]
+  },
+  {
+    "id": "andratx",
+    "nombre": "Obra nueva en Andratx",
+    "imagen": "https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg",
+    "link": "/proyectos/andratx",
+    "ubicacion": "Andratx, Mallorca",
+    "inicio": "2023-06-10",
+    "enProceso": true,
+    "tipo": "Obra nueva costera",
+    "superficie": "270 m²",
+    "colaboradores": ["Estudio Bauhaus", "Modular Construction Group"],
+    "descripcion": "Proyecto de obra nueva en zona costera, concebido para una familia extranjera. Se está ejecutando con técnicas de construcción modular rápida.",
+    "descripcionTecnica": "Módulos prefabricados, cimentación ligera, envolvente energética con aislamiento de celulosa.",
+    "galeria": [
+      "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg",
+      "https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg",
+      "https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg"
+    ]
+  },
+  {
+    "id": "portocolom",
+    "nombre": "Interiorismo en Portocolom",
+    "imagen": "https://images.pexels.com/photos/8134745/pexels-photo-8134745.jpeg",
+    "link": "/proyectos/portocolom",
+    "ubicacion": "Portocolom, Mallorca",
+    "inicio": "2021-11-05",
+    "enProceso": false,
+    "tipo": "Interiorismo",
+    "superficie": "95 m²",
+    "colaboradores": ["DecorMallorca", "Carpintería Es Fusteret"],
+    "descripcion": "Reforma de interiores en apartamento costero para alquiler vacacional. El enfoque se centró en iluminación natural, mobiliario a medida y textiles locales.",
+    "descripcionTecnica": "Revestimiento de madera natural, iluminación regulable, cocina abierta con isla central.",
+    "galeria": [
+      "https://images.pexels.com/photos/8112160/pexels-photo-8112160.jpeg",
+      "https://images.pexels.com/photos/8134760/pexels-photo-8134760.jpeg",
+      "https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg"
+    ]
+  },
+  {
+    "id": "inca",
+    "nombre": "Reforma integral en Inca",
+    "imagen": "https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg",
+    "link": "/proyectos/inca",
+    "ubicacion": "Inca, Mallorca",
+    "inicio": "2022-09-01",
+    "enProceso": false,
+    "tipo": "Reforma integral",
+    "superficie": "160 m²",
+    "colaboradores": ["ARQ Habitat", "EnergySmart Consulting"],
+    "descripcion": "Rehabilitación completa de una vivienda de los años 60, adaptándola a estándares actuales de eficiencia energética y confort.",
+    "descripcionTecnica": "Fachada SATE, ventanas triple vidrio, aerotermia y control solar con lamas.",
+    "galeria": [
+      "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg",
+      "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg"
+    ]
+  },
+  {
+    "id": "santanyi",
+    "nombre": "Villa en Santanyí",
+    "imagen": "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
+    "link": "/proyectos/santanyi",
+    "ubicacion": "Santanyí, Mallorca",
+    "inicio": "2023-03-15",
+    "enProceso": true,
+    "tipo": "Obra nueva",
+    "superficie": "250 m²",
+    "colaboradores": ["Landscapist Studio", "Construccions Santanyí"],
+    "descripcion": "Diseño de villa minimalista con integración paisajística en entorno rural. El cliente buscaba una vivienda discreta, eficiente y armoniosa con el entorno.",
+    "descripcionTecnica": "Hormigón visto, grandes ventanales, jardín xerófilo con bajo mantenimiento.",
+    "galeria": [
+      "https://images.pexels.com/photos/209260/pexels-photo-209260.jpeg",
+      "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+    ]
+  }
+]
