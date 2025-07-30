@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="bg-gray-100 w-full text-[#053158] py-10 border-t">
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 gap-8 sm:flex sm:justify-between sm:items-center">
         {/* Logo y descripción */}
-<div className="flex flex-col items-center w-full sm:w-[40%]">
+<div className="flex flex-col items-center w-full sm:w-[30%]">
           <img src="/LogoMDM.avif" alt="MDM Logo" className="w-36 mb-4" />
           <p className="mt-2 text-sm text-center">
             {t("footer.description")}

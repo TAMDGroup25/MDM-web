@@ -10,20 +10,34 @@ import Separator from "./components/separator";
 function App() {
   const location = useLocation();
 
-useEffect(() => {
-  const scrollToId = (location.state as { scrollToId?: string })?.scrollToId;
-  if (scrollToId) {
-    const el = document.getElementById(scrollToId);
-    if (el) {
+  useEffect(() => {
+    const { scrollToId, scrollToTop } = (location.state || {}) as {
+      scrollToId?: string;
+      scrollToTop?: boolean;
+    };
+
+    if (scrollToId) {
+      const el = document.getElementById(scrollToId);
+      if (el) {
+        setTimeout(() => {
+          window.scrollTo({
+            top: el.offsetTop,
+            behavior: "smooth",
+          });
+        }, 100);
+      }
+    } else if (scrollToTop) {
       setTimeout(() => {
         window.scrollTo({
-          top: el.offsetTop,
+          top: 0,
           behavior: "smooth",
         });
       }, 100);
+    } else {
+      // Siempre que cambie de ruta sin scrollToId ni scrollToTop → sube arriba
+      window.scrollTo({ top: 0 });
     }
-  }
-}, [location]);
+  }, [location.pathname]); // importante: solo cuando cambia el pathname
 
   return (
     <Layout>

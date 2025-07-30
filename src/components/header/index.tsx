@@ -36,6 +36,14 @@ const Header = () => {
     }
   };
 
+  const handleScrollToTopOrNavigateHome = () => {
+    if (isHome) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/", { state: { scrollToTop: true } });
+    }
+  };
+
   useEffect(() => {
     if (menuOpen && menuRef.current) {
       gsap.fromTo(
@@ -51,7 +59,8 @@ const Header = () => {
       if (
         menuRef.current &&
         !menuRef.current.contains(event.target as Node) &&
-        (event.target as HTMLElement)?.closest("button[aria-label='Menu']") === null
+        (event.target as HTMLElement)?.closest("button[aria-label='Menu']") ===
+          null
       ) {
         toggleMenu();
       }
@@ -77,7 +86,7 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: t("nav.home"), path: "/" },
+    { label: t("nav.home"), id: "inicio" },
     { label: t("nav.services"), id: "servicios" },
     { label: t("nav.projects"), path: "/proyectos" },
     { label: t("nav.about"), id: "nosotros" },
@@ -86,15 +95,16 @@ const Header = () => {
 
   return (
     <header className="w-full bg-white shadow-md fixed top-0 left-0 z-50">
-      <div className={`relative w-full flex justify-between items-center h-30 pr-4 sm:pr-8 ${paddingLeftClass}`}>
+      <div
+        className={`relative w-full flex justify-between items-center h-30 pr-4 sm:pr-8 ${paddingLeftClass}`}
+      >
         {/* Logo */}
-        <Link to="/">
-          <img
-            className="object-contain w-[8rem] sm:w-[10rem]"
-            src="/LogoMDM.avif"
-            alt="Logo MDM"
-          />
-        </Link>
+        <img
+          src="/LogoMDM.avif"
+          alt="Logo MDM"
+          className="object-contain w-[8rem] sm:w-[10rem] cursor-pointer"
+          onClick={handleScrollToTopOrNavigateHome}
+        />
 
         {/* NAV DESKTOP */}
         {!isMobileBreakpoint && (
@@ -112,6 +122,20 @@ const Header = () => {
                     <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#053158] transition-all duration-300 origin-left group-hover:w-full group-hover:origin-right" />
                   </Link>
                 );
+              } else if (item.id === "inicio") {
+                return (
+                  <button
+                    key={item.label}
+                    onClick={() => {
+                      handleScrollToTopOrNavigateHome();
+                      toggleMenu();
+                    }}
+                    className="group relative transition cursor-pointer"
+                  >
+                    {item.label}
+                    <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#053158] transition-all duration-300 origin-left group-hover:w-full group-hover:origin-right" />
+                  </button>
+                );
               } else if (isHome && item.id) {
                 return (
                   <a
@@ -121,7 +145,10 @@ const Header = () => {
                       e.preventDefault();
                       const target = document.getElementById(item.id);
                       if (target) {
-                        window.scrollTo({ top: target.offsetTop, behavior: "smooth" });
+                        window.scrollTo({
+                          top: target.offsetTop,
+                          behavior: "smooth",
+                        });
                         toggleMenu();
                       }
                     }}
@@ -158,7 +185,10 @@ const Header = () => {
               <ul>
                 <li className="flex items-center gap-2">
                   <Phone size={16} className="text-[#053158]" />
-                  <a href="tel:+34664686850" className="hover:underline text-[#053158]">
+                  <a
+                    href="tel:+34664686850"
+                    className="hover:underline text-[#053158]"
+                  >
                     +34 664 68 68 50
                   </a>
                 </li>
@@ -178,9 +208,16 @@ const Header = () => {
               label={t("nav.contact")}
               size="xl"
               onClick={() => {
-                const target = document.getElementById("contacto");
-                if (target) {
-                  window.scrollTo({ top: target.offsetTop, behavior: "smooth" });
+                if (location.pathname === "/") {
+                  const target = document.getElementById("contacto");
+                  if (target) {
+                    window.scrollTo({
+                      top: target.offsetTop,
+                      behavior: "smooth",
+                    });
+                  }
+                } else {
+                  navigate("/", { state: { scrollToId: "contacto" } });
                 }
                 toggleMenu();
               }}
@@ -221,6 +258,19 @@ const Header = () => {
                   >
                     {item.label}
                   </Link>
+                );
+              } else if (item.id === "inicio") {
+                return (
+                  <button
+                    key={item.label}
+                    onClick={() => {
+                      handleScrollToTopOrNavigateHome();
+                      toggleMenu();
+                    }}
+                    className="hover:text-[#053158]/70 transition text-left"
+                  >
+                    {item.label}
+                  </button>
                 );
               } else if (isHome && item.id) {
                 return (
@@ -275,7 +325,9 @@ const Header = () => {
                   toggleMenu();
                 }}
               />
-              <LanguageDropdown onLanguageChange={() => menuOpen && toggleMenu()} />
+              <LanguageDropdown
+                onLanguageChange={() => menuOpen && toggleMenu()}
+              />
             </div>
           </nav>
         </div>
