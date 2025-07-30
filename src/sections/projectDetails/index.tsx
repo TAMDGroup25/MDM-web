@@ -102,8 +102,8 @@ const ProyectsDetailsPage = () => {
                 </li>
               )}
               {proyecto.descripcionTecnica && (
-                <li className="flex items-start">
-                  <FileText className="w-10 h-10 mr-4 text-[#053158]" />
+                <li className="flex items-center">
+                  <FileText className="w-5 h-5 mr-4 text-[#053158]" />
                   <span>{proyecto.descripcionTecnica}</span>
                 </li>
               )}

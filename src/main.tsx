@@ -6,10 +6,12 @@ import "./index.css";
 import ProyectsDetailsPage from "./pages/proyectDetailsPage";
 import ProyectosPage from "./pages/proyectsPage";
 import "./i18n"; 
+import ScrollToTop from "./utils/scrollToTop";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/proyectos" element={<ProyectosPage />} />
