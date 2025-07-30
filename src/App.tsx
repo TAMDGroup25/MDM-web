@@ -34,10 +34,9 @@ function App() {
         });
       }, 100);
     } else {
-      // Siempre que cambie de ruta sin scrollToId ni scrollToTop → sube arriba
       window.scrollTo({ top: 0 });
     }
-  }, [location.pathname]); // importante: solo cuando cambia el pathname
+  }, [location.pathname, location.state]); 
 
   return (
     <Layout>
