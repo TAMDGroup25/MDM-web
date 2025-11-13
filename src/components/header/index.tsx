@@ -109,7 +109,7 @@ const Header = () => {
 
         {/* NAV DESKTOP */}
         {!isMobileBreakpoint && (
-          <nav className="flex space-x-8 text-[#053158] font-medium absolute left-1/2 transform -translate-x-1/2">
+          <nav className="flex space-x-8 text-primary font-medium absolute left-1/2 transform -translate-x-1/2">
             {navItems.map((item) => {
               if (item.path) {
                 return (
@@ -120,7 +120,7 @@ const Header = () => {
                     onClick={toggleMenu}
                   >
                     {item.label}
-                    <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#053158] transition-all duration-300 origin-left group-hover:w-full group-hover:origin-right" />
+                    <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-detail transition-all duration-300 origin-left group-hover:w-full group-hover:origin-right" />
                   </Link>
                 );
               } else if (item.id === "inicio") {
@@ -134,7 +134,7 @@ const Header = () => {
                     className="group relative transition cursor-pointer"
                   >
                     {item.label}
-                    <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#053158] transition-all duration-300 origin-left group-hover:w-full group-hover:origin-right" />
+                    <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-detail transition-all duration-300 origin-left group-hover:w-full group-hover:origin-right" />
                   </button>
                 );
               } else if (isHome && item.id) {
@@ -156,7 +156,7 @@ const Header = () => {
                     className="group relative transition"
                   >
                     {item.label}
-                    <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#053158] transition-all duration-300 origin-left group-hover:w-full group-hover:origin-right" />
+                    <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-detail transition-all duration-300 origin-left group-hover:w-full group-hover:origin-right" />
                   </a>
                 );
               } else if (!isHome && item.id) {
@@ -170,7 +170,7 @@ const Header = () => {
                     className="group relative transition"
                   >
                     {item.label}
-                    <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#053158] transition-all duration-300 origin-left group-hover:w-full group-hover:origin-right" />
+                    <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-detail transition-all duration-300 origin-left group-hover:w-full group-hover:origin-right" />
                   </button>
                 );
               }
@@ -185,19 +185,19 @@ const Header = () => {
             <div className="mr-10">
               <ul>
                 <li className="flex items-center gap-2">
-                  <Phone size={16} className="text-[#053158]" />
+                  <Phone size={16} className="text-primary" />
                   <a
                     href="tel:+34664686850"
-                    className="hover:underline text-[#053158]"
+                    className="hover:underline text-primary"
                   >
                     +34 664 68 68 50
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Mail size={16} className="text-[#053158]" />
+                  <Mail size={16} className="text-primary" />
                   <a
                     href="mailto:info@managementmallorca.com"
-                    className="hover:underline text-[#053158]"
+                    className="hover:underline text-primary"
                   >
                     info@managementmallorca.com
                   </a>
@@ -232,9 +232,9 @@ const Header = () => {
         {isMobileBreakpoint && (
           <button onClick={toggleMenu} aria-label="Menu">
             {menuOpen ? (
-              <X className="w-8 h-8 text-[#053158]" />
+              <X className="w-8 h-8 text-primary" />
             ) : (
-              <Menu className="w-8 h-8 text-[#053158]" />
+              <Menu className="w-8 h-8 text-primary" />
             )}
           </button>
         )}
@@ -247,14 +247,14 @@ const Header = () => {
           className="bg-white border-t border-gray-200 z-50 overflow-hidden"
           style={{ height: 0, opacity: 0 }}
         >
-          <nav className="flex flex-col space-y-4 p-4 text-[#053158] font-medium">
+          <nav className="flex flex-col space-y-4 p-4 text-primary font-medium">
             {navItems.map((item) => {
               if (item.path) {
                 return (
                   <Link
                     key={item.label}
                     to={item.path}
-                    className="hover:text-[#053158]/70 transition"
+                    className="hover:text-primary/70 transition"
                     onClick={toggleMenu}
                   >
                     {item.label}
@@ -268,7 +268,7 @@ const Header = () => {
                       handleScrollToTopOrNavigateHome();
                       toggleMenu();
                     }}
-                    className="hover:text-[#053158]/70 transition text-left"
+                    className="hover:text-primary/70 transition text-left"
                   >
                     {item.label}
                   </button>
@@ -289,7 +289,7 @@ const Header = () => {
                         toggleMenu();
                       }
                     }}
-                    className="hover:text-[#053158]/70 transition"
+                    className="hover:text-primary/70 transition"
                   >
                     {item.label}
                   </a>
@@ -302,7 +302,7 @@ const Header = () => {
                       navigate("/", { state: { scrollToId: item.id } });
                       toggleMenu();
                     }}
-                    className="hover:text-[#053158]/70 transition text-left"
+                    className="hover:text-primary/70 transition text-left"
                   >
                     {item.label}
                   </button>

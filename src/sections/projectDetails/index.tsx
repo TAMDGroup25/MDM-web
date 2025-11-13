@@ -60,7 +60,7 @@ const ProyectsDetailsPage = () => {
 
         {/* Texto descriptivo */}
         <div className="w-full md:w-1/2 h-full flex items-center justify-center px-6 py-10">
-          <div className="text-[#053158] max-w-2xl w-full space-y-6">
+    <div className="text-primary max-w-2xl w-full space-y-6">
             <div className="mb-4">
               <h2 className="text-3xl md:text-5xl font-extrabold text-center leading-tight uppercase">
                 {proyecto.nombre}
@@ -85,25 +85,25 @@ const ProyectsDetailsPage = () => {
             <ul className="text-base md:text-lg space-y-3">
               {proyecto.tipo && (
                 <li className="flex items-center">
-                  <GanttChart className="w-5 h-5 mr-4 text-[#053158]" />
+    <GanttChart className="w-5 h-5 mr-4 text-primary" />
                   <span>{proyecto.tipo}</span>
                 </li>
               )}
               {proyecto.superficie && (
                 <li className="flex items-center">
-                  <Ruler className="w-5 h-5 mr-4 text-[#053158]" />
+    <Ruler className="w-5 h-5 mr-4 text-primary" />
                   <span>{proyecto.superficie}</span>
                 </li>
               )}
               {proyecto.colaboradores && proyecto.colaboradores.length > 0 && (
                 <li className="flex items-center">
-                  <Users className="w-5 h-5 mr-4 text-[#053158]" />
+    <Users className="w-5 h-5 mr-4 text-primary" />
                   <span>{proyecto.colaboradores.join(", ")}</span>
                 </li>
               )}
               {proyecto.descripcionTecnica && (
                 <li className="flex items-center">
-                  <FileText className="w-5 h-5 mr-4 text-[#053158]" />
+    <FileText className="w-5 h-5 mr-4 text-primary" />
                   <span>{proyecto.descripcionTecnica}</span>
                 </li>
               )}

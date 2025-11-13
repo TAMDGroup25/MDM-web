@@ -37,9 +37,9 @@ const CustomButton = ({
     "rounded font-medium transition-colors duration-200 inline-flex items-center justify-center text-center cursor-pointer";
 
   const variants: Record<Variant, string> = {
-    primary: "bg-[#053158] text-white hover:bg-[#053158]/90",
-    inverted: "bg-white text-[#053158] border border-[#053158] hover:bg-[#053158] hover:text-white",
-    ghost: "bg-transparent text-[#053158] hover:text-[#053158]/70",
+    primary: "bg-primary text-white hover:bg-primary/90",
+    inverted: "bg-white text-primary border border-primary hover:bg-primary hover:text-white",
+    ghost: "bg-transparent text-primary hover:text-detail",
   };
 
   const disabledClass = "opacity-50 cursor-not-allowed pointer-events-none";
