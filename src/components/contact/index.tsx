@@ -32,7 +32,7 @@ const Contact = () => {
       <div className="absolute inset-0 bg-black/50 z-0" />
 
       <div className="relative z-10 max-w-4xl w-full p-6 sm:p-10 bg-white bg-opacity-90 backdrop-blur-md rounded-xl shadow-xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#053158] mb-8 uppercase">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-8 uppercase">
           {t("contact.title")}
         </h2>
 
@@ -57,7 +57,7 @@ const Contact = () => {
             required
           />
           <div className="md:col-span-2">
-            <label className="block mb-2 text-sm font-medium text-[#053158]">
+            <label className="block mb-2 text-sm font-medium text-primary">
               {t("contact.message")}
             </label>
             <textarea
@@ -66,7 +66,7 @@ const Contact = () => {
               value={form.mensaje}
               onChange={handleChange}
               required
-              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#053158] resize-none"
+              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 text-black focus:ring-primary resize-none"
             />
           </div>
           <div className="md:col-span-2 flex justify-center">

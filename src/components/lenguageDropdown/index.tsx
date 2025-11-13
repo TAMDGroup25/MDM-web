@@ -66,7 +66,7 @@ const LanguageDropdown = ({ onLanguageChange }: Props) => {
         className="flex items-center justify-center gap-2 px-2 py-1 hover:bg-gray-100 transition rounded cursor-pointer"
       >
         <img src={current.flag} alt={current.name} className="w-7 h-5" />
-        <ChevronDown className="w-10 h-15 text-[#053158] transition-transform duration-200" />
+      <ChevronDown className="w-10 h-15 text-detail transition-transform duration-200" />
       </button>
 
       {open && (

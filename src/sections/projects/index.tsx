@@ -59,7 +59,7 @@ const Proyectos = () => {
   return (
     <section
       id="proyectos"
-      className="w-full px-4 py-30 bg-white text-[#053158] flex flex-col items-center"
+      className="w-full px-4 py-30 bg-white text-primary flex flex-col items-center"
     >
       <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center uppercase">
         {t("projects.title")}
@@ -78,7 +78,7 @@ const Proyectos = () => {
           >
             {!loadedImages[proyecto.id] && (
               <div className="absolute inset-0 bg-white flex items-center justify-center z-10">
-                <Loader2 className="animate-spin text-[#053158] w-8 h-8" />
+                <Loader2 className="animate-spin text-primary w-8 h-8" />
               </div>
             )}
 
