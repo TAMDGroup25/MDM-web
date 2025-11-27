@@ -14,13 +14,11 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-100 w-full text-primary py-10 border-t">
-<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 gap-8 sm:flex sm:justify-between sm:items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 gap-8 sm:flex sm:justify-between sm:items-center">
         {/* Logo y descripción */}
-<div className="flex flex-col items-center w-full sm:w-[30%]">
+        <div className="flex flex-col items-center w-full sm:w-[30%]">
           <img src="/LogoMDM.avif" alt="MDM Logo" className="w-36 mb-4" />
-          <p className="mt-2 text-sm text-center">
-            {t("footer.description")}
-          </p>
+          <p className="mt-2 text-sm text-center">{t("footer.description")}</p>
         </div>
 
         {/* Navegación */}
@@ -70,6 +68,40 @@ const Footer = () => {
                 className="hover:text-detail"
               >
                 {t("nav.contact")}
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Legal */}
+        <div>
+          <h3 className="font-semibold mb-3">{t("legal.title")}</h3>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <a href="/aviso-legal" className="hover:text-detail transition">
+                {t("legal.legalNotice")}
+              </a>
+            </li>
+            <li>
+              <a href="/privacidad" className="hover:text-detail transition">
+                {t("legal.privacy")}
+              </a>
+            </li>
+            <li>
+              <a href="/cookies" className="hover:text-detail transition">
+                {t("legal.cookies")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="hover:text-detail transition"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.dispatchEvent(new Event("openCookiePreferences"));
+                }}
+              >
+                {t("nav.cookiePrefs")}
               </a>
             </li>
           </ul>

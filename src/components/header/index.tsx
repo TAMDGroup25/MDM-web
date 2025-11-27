@@ -10,6 +10,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [isMobileBreakpoint, setIsMobileBreakpoint] = useState(false);
+  const [menuTop, setMenuTop] = useState(0);
   const menuRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const isHome = location.pathname === "/";
@@ -22,6 +23,8 @@ const Header = () => {
     if (!menuOpen) {
       setShowMenu(true);
       setMenuOpen(true);
+      // Bloquear el scroll de la página
+      document.body.style.overflow = "hidden";
     } else {
       gsap.to(menuRef.current, {
         height: 0,
@@ -31,6 +34,8 @@ const Header = () => {
         onComplete: () => {
           setShowMenu(false);
           setMenuOpen(false);
+          // Restaurar el scroll de la página
+          document.body.style.overflow = "";
         },
       });
     }
@@ -46,10 +51,18 @@ const Header = () => {
 
   useEffect(() => {
     if (menuOpen && menuRef.current) {
+      const headerEl = document.querySelector("header");
+      const topOffset = headerEl ? headerEl.getBoundingClientRect().height : 0;
+      setMenuTop(topOffset);
       gsap.fromTo(
         menuRef.current,
         { height: 0, opacity: 0 },
-        { height: "auto", opacity: 1, duration: 0.3, ease: "power2.out" }
+        {
+          height: Math.max(window.innerHeight - topOffset, 0),
+          opacity: 1,
+          duration: 0.3,
+          ease: "power2.out",
+        }
       );
     }
   }, [menuOpen]);
@@ -73,7 +86,7 @@ const Header = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [menuOpen]);
 
   useEffect(() => {
@@ -230,13 +243,16 @@ const Header = () => {
 
         {/* BOTÓN MENU MOBILE */}
         {isMobileBreakpoint && (
-          <button onClick={toggleMenu} aria-label="Menu">
-            {menuOpen ? (
-              <X className="w-8 h-8 text-primary" />
-            ) : (
-              <Menu className="w-8 h-8 text-primary" />
-            )}
-          </button>
+          <div className="flex items-center gap-3">
+            <LanguageDropdown />
+            <button onClick={toggleMenu} aria-label="Menu">
+              {menuOpen ? (
+                <X className="w-8 h-8 text-primary" />
+              ) : (
+                <Menu className="w-8 h-8 text-primary" />
+              )}
+            </button>
+          </div>
         )}
       </div>
 
@@ -244,10 +260,10 @@ const Header = () => {
       {showMenu && isMobileBreakpoint && (
         <div
           ref={menuRef}
-          className="bg-white border-t border-gray-200 z-50 overflow-hidden"
-          style={{ height: 0, opacity: 0 }}
+          className="fixed left-0 right-0 bg-white border-t border-gray-200 z-50 overflow-hidden"
+          style={{ top: menuTop, height: 0, opacity: 0 }}
         >
-          <nav className="flex flex-col space-y-4 p-4 text-primary font-medium">
+          <nav className="flex flex-col space-y-4 p-6 text-primary font-medium h-full overflow-y-auto pb-40">
             {navItems.map((item) => {
               if (item.path) {
                 return (
@@ -311,25 +327,48 @@ const Header = () => {
               return null;
             })}
 
-            <div className="flex items-center justify-center mt-2 gap-4">
-              <CustomButton
-                label={t("nav.contact")}
-                size="md"
-                onClick={() => {
-                  const target = document.getElementById("contacto");
-                  if (target) {
-                    window.scrollTo({
-                      top: target.offsetTop,
-                      behavior: "smooth",
-                    });
-                  }
-                  toggleMenu();
-                }}
-              />
-              <LanguageDropdown
-                onLanguageChange={() => menuOpen && toggleMenu()}
-              />
+            {/* Selector de idioma eliminado del menú móvil; ahora está en el header */}
+
+            {/* Legal group in mobile menu */}
+            <div className="mt-4 border-t pt-4">
+              <span className="font-semibold mb-2">{t("legal.title")}</span>
+              <div className="flex flex-col space-y-2 mt-2">
+                <Link
+                  to="/aviso-legal"
+                  onClick={toggleMenu}
+                  className="hover:text-primary/70 transition"
+                >
+                  {t("legal.legalNotice")}
+                </Link>
+                <Link
+                  to="/privacidad"
+                  onClick={toggleMenu}
+                  className="hover:text-primary/70 transition"
+                >
+                  {t("legal.privacy")}
+                </Link>
+                <Link
+                  to="/cookies"
+                  onClick={toggleMenu}
+                  className="hover:text-primary/70 transition"
+                >
+                  {t("legal.cookies")}
+                </Link>
+                <a
+                  href="#"
+                  className="hover:text-detail transition"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.dispatchEvent(new Event("openCookiePreferences"));
+                    toggleMenu();
+                  }}
+                >
+                  {t("nav.cookiePrefs")}
+                </a>
+              </div>
             </div>
+
+            {/* Botón de contacto eliminado en menú móvil */}
           </nav>
         </div>
       )}

@@ -4,9 +4,11 @@
     "services": "Dienstleistungen",
     "projects": "Projekte",
     "about": "Über uns",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "legal": "Rechtliches",
+    "cookiePrefs": "Cookie-Einstellungen"
   },
-   "footer": {
+  "footer": {
     "description": "Wir bieten umfassende Lösungen in Projektmanagement, Architektur, Ingenieurwesen und Design.",
     "links": {
       "title": "Navigation"
@@ -20,7 +22,7 @@
     },
     "rights": "Alle Rechte vorbehalten."
   },
-   "contact": {
+  "contact": {
     "title": "Kontaktiere uns",
     "name": "Name",
     "email": "E-Mail",
@@ -38,7 +40,7 @@
     "paragraph2": "Unser Team besteht aus Fachleuten verschiedener Disziplinen, was es uns ermöglicht, vollständige und maßgeschneiderte Lösungen anzubieten. Jede Projektphase – vom ersten Entwurf bis zur Umsetzung – wird mit Präzision, Planung und Nähe durchgeführt, um hochwertige Ergebnisse zu gewährleisten.",
     "paragraph3": "Wir setzen auf eine Arbeitsphilosophie, die auf Transparenz, Innovation und ständiger Kommunikation basiert. Bei MDM ist jedes Projekt einzigartig – und so behandeln wir es auch. Unser oberstes Ziel ist es, dass sich der Kunde jederzeit begleitet fühlt. Deine Vision treibt uns an, unsere Erfahrung macht sie möglich."
   },
-    "services": {
+  "services": {
     "title": "Unsere Dienstleistungen",
     "engineering": {
       "title": "Ingenieurprojekte",
@@ -61,10 +63,7 @@
     "interior": {
       "title": "Innenarchitektur",
       "description": "Innenarchitektur und kreative Lösungen, die Räume verändern und verbessern.",
-      "items": [
-        "Beleuchtungsprojekte",
-        "Innenarchitekturvorschläge"
-      ]
+      "items": ["Beleuchtungsprojekte", "Innenarchitekturvorschläge"]
     },
     "licensing": {
       "title": "Genehmigungen und Inbetriebnahme",
@@ -81,5 +80,30 @@
   "seo": {
     "title": "MDM · Ganzheitliches Projektmanagement auf Mallorca",
     "description": "Architektur, Bauarbeiten, Renovierungen und Innenarchitektur auf Mallorca. Bei MDM begleiten wir Ihr Projekt umfassend, professionell und persönlich."
+  },
+  "legal": {
+    "title": "Rechtliches",
+    "legalNotice": "Rechtlicher Hinweis",
+    "privacy": "Datenschutzerklärung",
+    "cookies": "Cookie-Richtlinie"
+  },
+  "cookieConsent": {
+    "title": "Deine Privatsphäre ist uns wichtig",
+    "description": "Wir verwenden Cookies, um deine Erfahrung zu verbessern. Einige sind notwendig, damit die Website funktioniert. Du kannst alle akzeptieren, nicht wesentliche ablehnen oder deine Präferenzen konfigurieren.",
+    "acceptAll": "Alle akzeptieren",
+    "reject": "Nicht wesentliche ablehnen",
+    "configure": "Konfigurieren",
+    "necessaryTitle": "Notwendig",
+    "necessaryDesc": "Für die grundlegende Funktionalität erforderlich. Immer aktiv.",
+    "active": "Aktiv",
+    "analyticsTitle": "Analyse",
+    "analyticsDesc": "Hilft uns, die Nutzung der Website zu verstehen (z. B. Google Analytics).",
+    "marketingTitle": "Marketing",
+    "marketingDesc": "Für Personalisierung und Werbung (Tracking-Pixel usw.).",
+    "save": "Präferenzen speichern",
+    "back": "Zurück",
+    "cookiesPolicy": "Cookie-Richtlinie",
+    "privacyPolicy": "Datenschutzerklärung",
+    "legalNotice": "Rechtlicher Hinweis"
   }
 }
