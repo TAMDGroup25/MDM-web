@@ -4,7 +4,9 @@
     "services": "Servicios",
     "projects": "Proyectos",
     "about": "Nosotros",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "legal": "Legal",
+    "cookiePrefs": "Preferencias de cookies"
   },
   "footer": {
     "description": "Ofrecemos soluciones integrales en gestión de proyectos, arquitectura, ingeniería y diseño.",
@@ -27,7 +29,7 @@
     "message": "Mensaje",
     "button": "Enviar mensaje"
   },
-   "hero": {
+  "hero": {
     "title": "Gestión Integral de Proyectos en Mallorca",
     "subtitle": "Arquitectura, obras y dirección personalizada para tus proyectos más exigentes.",
     "button": "Contáctanos"
@@ -38,7 +40,7 @@
     "paragraph2": "Nuestro equipo está compuesto por perfiles especializados en distintas disciplinas, lo que nos permite ofrecer soluciones completas y adaptadas a cada necesidad. Cada fase del proyecto —desde el diseño inicial hasta la ejecución— es abordada con precisión, planificación y cercanía, garantizando resultados de alto nivel.",
     "paragraph3": "Apostamos por una filosofía de trabajo centrada en la transparencia, la innovación y la comunicación constante. En MDM, cada proyecto es único, y así lo tratamos. Nuestra prioridad es que el cliente se sienta acompañado en todo momento. Tu visión nos impulsa, nuestra experiencia la hace posible."
   },
-   "services": {
+  "services": {
     "title": "Nuestros Servicios",
     "engineering": {
       "title": "Proyectos de Ingeniería",
@@ -61,10 +63,7 @@
     "interior": {
       "title": "Interiorismo",
       "description": "Diseño interior y soluciones creativas que transforman y mejoran los espacios.",
-      "items": [
-        "Proyectos de iluminación",
-        "Propuestas de interiorismo"
-      ]
+      "items": ["Proyectos de iluminación", "Propuestas de interiorismo"]
     },
     "licensing": {
       "title": "Licencias y Puesta en Servicio",
@@ -76,10 +75,35 @@
     }
   },
   "projects": {
-    "title": "Nuestros Proyectos" 
+    "title": "Nuestros Proyectos"
   },
   "seo": {
     "title": "MDM · Gestión Integral de Proyectos en Mallorca",
     "description": "Arquitectura, obras, reformas e interiorismo en Mallorca. En MDM gestionamos tu proyecto de forma integral, profesional y personalizada."
+  },
+  "legal": {
+    "title": "Legal",
+    "legalNotice": "Aviso Legal",
+    "privacy": "Política de Privacidad",
+    "cookies": "Política de Cookies"
+  },
+  "cookieConsent": {
+    "title": "Tu privacidad nos importa",
+    "description": "Usamos cookies para mejorar tu experiencia. Algunas son necesarias para que el sitio funcione. Puedes aceptar todas, rechazar las no esenciales o configurar tus preferencias.",
+    "acceptAll": "Aceptar todas",
+    "reject": "Rechazar no esenciales",
+    "configure": "Configurar",
+    "necessaryTitle": "Necesarias",
+    "necessaryDesc": "Requeridas para el funcionamiento básico. Siempre activas.",
+    "active": "Activadas",
+    "analyticsTitle": "Analíticas",
+    "analyticsDesc": "Nos ayudan a entender el uso del sitio (p. ej., Google Analytics).",
+    "marketingTitle": "Marketing",
+    "marketingDesc": "Para personalización y publicidad (píxeles de seguimiento, etc.).",
+    "save": "Guardar preferencias",
+    "back": "Volver",
+    "cookiesPolicy": "Política de Cookies",
+    "privacyPolicy": "Política de Privacidad",
+    "legalNotice": "Aviso Legal"
   }
 }

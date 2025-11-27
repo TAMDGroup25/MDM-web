@@ -1,0 +1,71 @@
+/* Estilos del contenido generado desde DOCX para ser responsive y legible */
+
+.docx-viewer {
+  line-height: 1.75;
+  color: var(--color-primary, #0C2F4B);
+}
+
+.docx-viewer h1,
+.docx-viewer h2,
+.docx-viewer h3,
+.docx-viewer h4 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.docx-viewer p {
+  margin: 0.75rem 0;
+}
+
+.docx-viewer ul,
+.docx-viewer ol {
+  margin: 0.75rem 0 0.75rem 1.25rem;
+}
+
+.docx-viewer img,
+.docx-viewer video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablas responsive */
+.docx-viewer table {
+  display: block; /* permite scroll horizontal si es necesario */
+  width: 100% !important;
+  border-collapse: collapse;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background: white;
+}
+
+.docx-viewer thead {
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+.docx-viewer th,
+.docx-viewer td {
+  border: 1px solid #e5e7eb; /* gray-200 */
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.docx-viewer tr:nth-child(even) {
+  background-color: #f9fafb; /* gray-50 */
+}
+
+/* Bloques de código / pre */
+.docx-viewer pre,
+.docx-viewer code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* enlaces */
+.docx-viewer a {
+  color: #0C2F4B;
+  text-decoration: underline;
+}
+

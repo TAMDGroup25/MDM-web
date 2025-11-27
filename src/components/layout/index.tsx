@@ -3,6 +3,7 @@ import Header from "../header";
 import Footer from "../footer";
 import LenguajeManager from "../lenguajeManager";
 import WhatsappButton from "../whatsappButton";
+import CookieConsent from "../cookieConsent";
 
 interface LayoutProps {
   children: ReactNode;
@@ -16,6 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Header />
       <main className="pt-20">{children}</main>
       <Footer />
+      <CookieConsent />
     </div>
   );
 };

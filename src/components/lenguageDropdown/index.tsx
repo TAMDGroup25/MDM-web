@@ -64,25 +64,31 @@ const LanguageDropdown = ({ onLanguageChange }: Props) => {
         ref={buttonRef}
         onClick={() => setOpen((prev) => !prev)}
         className="flex items-center justify-center gap-2 px-2 py-1 hover:bg-gray-100 transition rounded cursor-pointer"
+        aria-haspopup="listbox"
+        aria-expanded={open}
       >
-        <img src={current.flag} alt={current.name} className="w-7 h-5" />
-      <ChevronDown className="w-10 h-15 text-detail transition-transform duration-200" />
+        <img
+          src={current.flag}
+          alt={current.name}
+          className="w-5 h-4 sm:w-6 sm:h-4 md:w-7 md:h-5"
+        />
+        <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 text-detail" />
       </button>
 
       {open && (
         <div
           ref={dropdownRef}
-          className="absolute right-0 w-40 bg-white border border-gray-200 shadow-lg rounded z-[9999] bottom-full mt-2 2xl:bottom-auto 2xl:top-full 2xl:mt-2"
+          className="absolute right-0 w-40 bg-white border border-gray-200 shadow-lg rounded z-[9999] top-full mt-2"
         >
           {languages.map((lang) => (
             <button
               key={lang.code}
               onClick={() => changeLanguage(lang.code)}
-              className={`w-full px-4 py-2 flex items-center text-black gap-2 hover:bg-gray-100 cursor-pointer text-sm ${
+              className={`w-full px-4 py-2 flex items-center text-black gap-2 hover:bg-gray-100 cursor-pointer text-xs sm:text-sm ${
                 i18n.language === lang.code ? "bg-gray-100 font-semibold" : ""
               }`}
             >
-              <img src={lang.flag} alt={lang.name} className="w-5 h-5" />
+              <img src={lang.flag} alt={lang.name} className="w-4 h-4 sm:w-5 sm:h-5" />
               {lang.name}
             </button>
           ))}

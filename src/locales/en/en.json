@@ -4,7 +4,9 @@
     "services": "Services",
     "projects": "Projects",
     "about": "About Us",
-    "contact": "Contact"
+    "contact": "Contact",
+    "legal": "Legal",
+    "cookiePrefs": "Cookie Preferences"
   },
   "footer": {
     "description": "We provide comprehensive solutions in project management, architecture, engineering, and design.",
@@ -32,7 +34,7 @@
     "subtitle": "Architecture, construction, and personalized project direction for your most ambitious goals.",
     "button": "Contact Us"
   },
-   "about": {
+  "about": {
     "title": "About Us",
     "paragraph1": "At MDM, we began our journey a year ago with a clear vision focused on offering comprehensive project management based on professionalism, commitment, and excellence. From our base in Mallorca, we work closely with our clients to bring their ideas to life, covering areas such as architecture, construction, and technical direction.",
     "paragraph2": "Our team consists of specialists from various disciplines, allowing us to provide complete and tailored solutions. Every phase of the project — from initial design to execution — is approached with precision, planning, and closeness, ensuring high-quality results.",
@@ -61,10 +63,7 @@
     "interior": {
       "title": "Interior Design",
       "description": "Interior design and creative solutions that transform and enhance spaces.",
-      "items": [
-        "Lighting design projects",
-        "Interior design proposals"
-      ]
+      "items": ["Lighting design projects", "Interior design proposals"]
     },
     "licensing": {
       "title": "Licensing and Commissioning",
@@ -81,5 +80,30 @@
   "seo": {
     "title": "MDM · Comprehensive Project Management in Mallorca",
     "description": "Architecture, construction, renovations, and interior design in Mallorca. At MDM, we manage your project professionally and personally from start to finish."
+  },
+  "legal": {
+    "title": "Legal",
+    "legalNotice": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookies Policy"
+  },
+  "cookieConsent": {
+    "title": "Your privacy matters",
+    "description": "We use cookies to improve your experience. Some are necessary for the site to work. You can accept all, reject non-essential cookies, or configure your preferences.",
+    "acceptAll": "Accept all",
+    "reject": "Reject non-essentials",
+    "configure": "Configure",
+    "necessaryTitle": "Necessary",
+    "necessaryDesc": "Required for basic site functionality. Always active.",
+    "active": "Active",
+    "analyticsTitle": "Analytics",
+    "analyticsDesc": "Help us understand site usage (e.g., Google Analytics).",
+    "marketingTitle": "Marketing",
+    "marketingDesc": "For personalization and advertising (tracking pixels, etc.).",
+    "save": "Save preferences",
+    "back": "Back",
+    "cookiesPolicy": "Cookies Policy",
+    "privacyPolicy": "Privacy Policy",
+    "legalNotice": "Legal Notice"
   }
 }
