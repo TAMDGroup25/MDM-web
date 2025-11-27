@@ -4,13 +4,7 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();
 
-  const scrollToSection = (e: React.MouseEvent, id: string) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: id === "#" ? 0 : document.getElementById(id)?.offsetTop ?? 0,
-      behavior: "smooth",
-    });
-  };
+
 
   return (
     <footer className="bg-gray-100 w-full text-primary py-10 border-t">
@@ -21,57 +15,7 @@ const Footer = () => {
           <p className="mt-2 text-sm text-center">{t("footer.description")}</p>
         </div>
 
-        {/* Navegación */}
-        <div className="hidden lg:block">
-          <h3 className="font-semibold mb-3">{t("footer.links.title")}</h3>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a
-                href="#"
-                onClick={(e) => scrollToSection(e, "#")}
-                className="hover:text-detail transition"
-              >
-                {t("nav.home")}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#servicios"
-                onClick={(e) => scrollToSection(e, "servicios")}
-                className="hover:text-detail"
-              >
-                {t("nav.services")}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#proyectos"
-                onClick={(e) => scrollToSection(e, "proyectos")}
-                className="hover:text-detail"
-              >
-                {t("nav.projects")}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#nosotros"
-                onClick={(e) => scrollToSection(e, "nosotros")}
-                className="hover:text-detail"
-              >
-                {t("nav.about")}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contacto"
-                onClick={(e) => scrollToSection(e, "contacto")}
-                className="hover:text-detail"
-              >
-                {t("nav.contact")}
-              </a>
-            </li>
-          </ul>
-        </div>
+        {/* Navegación eliminada según solicitud */}
 
         {/* Legal */}
         <div>
